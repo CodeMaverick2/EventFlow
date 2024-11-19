@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #00d1b2;
+    --background-light: #f8f9fa;
+    --background-dark: #121212;
+    --text-light: #212529;
+    --text-dark: #ffffff;
+    --card-light: rgba(255, 255, 255, 0.9);
+    --card-dark: rgba(40, 40, 40, 0.9);
+  }
+  
+  .flow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .flow-container.light {
+    background: var(--background-light);
+    color: var(--text-light);
+  }
+  
+  .flow-container.dark {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+  
+  .header {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: var(--primary-color);
+  }
+  
+  .theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .start-btn {
+    background: linear-gradient(to right, #00d1b2, #00a3ff);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .start-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .flow-chart {
+    width: 90%;
+    height: 500px;
+    border: 2px solid var(--primary-color);
+    border-radius: 15px;
+    background: var(--card-light);
+    overflow: hidden;
+    margin: 20px 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .flow-container.dark .flow-chart {
+    background: var(--card-dark);
+  }
+  
+  .flow-logs {
+    width: 90%;
+    padding: 20px;
+    background: var(--card-light);
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .flow-container.dark .flow-logs {
+    background: var(--card-dark);
+    border-color: var(--text-dark);
+  }
+  
+  .flow-logs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .flow-logs li {
+    margin: 5px 0;
+    padding: 10px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
