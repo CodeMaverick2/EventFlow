@@ -5,6 +5,7 @@
 
 **EventFlow** is a real-time flow simulation and tracking system that allows you to visualize the execution of a series of events (such as sending emails, waiting, and handling renewals) through a node-based chart. The application allows users to start a simulation, view logs, and monitor the progression of events in real-time. It uses React and React Flow for the frontend and Node.js for the backend to simulate the flow, with MongoDB used to store logs of the flow.
 
+**DEMO** - https://drive.google.com/file/d/1UVxYUxQZhmv796t_dammleg6rmGpKvr4/view?usp=sharing
 ## Features
 
 - Real-time flow visualization with nodes representing different events.
